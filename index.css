@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;600;700;1,14..32,400;600;700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:hsl(0, 0%, 12%);
+}
+
+.background{
+    display:flex;
+    align-items:center;
+    align-content: center;
+    justify-content:center;
+    text-align:center;
+    background-color:black;
+    color:white;
+    min-height: 100vh;
+    font-size:14px;
+    font-family:"Inter",sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+button {
+    background-color: hsl(0, 0%, 20%);
+    border-radius:5px;
+    display:block;
+    cursor:pointer;
+    color:white;
+    width: 300px;
+    height:40px;
+    text-align: center;
+    margin: 20px;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+button:hover{
+    background-color:hsl(75, 94%, 57%)
+}
+
+.inner-background{
+    background-color:hsl(0, 0%, 12%);
+    border-radius:10px;
+    width:340px;
+    height:500px;
+}
+
+img{
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+}
+
+.London{
+    color:yellow;
+    margin:5px;
+}
+
+
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    .background {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .inner-background {
+        width: 98%;
+        min-width: unset;
+        max-width: 350px;
+        height: auto;
+        padding: 20px 10px;
+    }
+    img {
+        width: 70px;
+        height: 70px;
+    }
+    button {
+        width: 100%;
+        min-width: 0;
+        margin: 12px 0;
+        font-size: 1rem;
+    }
+    .London {
+        font-size: 0.95rem;
+    }
+}
